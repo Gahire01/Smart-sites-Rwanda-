@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartSites Rwanda - Leading Software Development Company</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress"></div>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" aria-label="Toggle dark mode">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Scroll To Top Button -->
+    <button class="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-chevron-up"></i>
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="logo.png" alt="SmartSites Rwanda Logo" class="navbar-logo">
+                <span>SmartSites Rwanda</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#internship">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6 fade-in px-3">
+                    <h1 class="display-4 fw-bold">Building Digital Excellence in Rwanda</h1>
+                    <p class="lead">We craft innovative software solutions that empower businesses across East Africa to thrive in the digital age.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="animated-button">
+                            <i class="fas fa-star"></i>
+                            <span class="button-text-wrapper">
+                                <span class="button-text">
+                                    Hire Us<br>
+                                    Join as Trainee
+                                </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 slide-in-right px-3">
+                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1000&q=80" alt="Modern Workspace with MacBook Pro" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Our Services</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4 fade-in">
+                    <div class="service-card animate-hover">
+                        <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                        <h3>Custom Software</h3>
+                        <p>Tailored software solutions designed to meet your specific business needs.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 fade-in">
+                    <div class="service-card animate-hover">
+                        <i class="fas fa-mobile-alt fa-3x mb-3"></i>
+                        <h3>Mobile Apps</h3>
+                        <p>Native and cross-platform mobile applications.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 fade-in">
+                    <div class="service-card animate-hover">
+                        <i class="fas fa-graduation-cap fa-3x mb-3"></i>
+                        <h3>Online Courses</h3>
+                        <p>Professional tech courses taught by industry experts.</p>
+                        <a href="#courses" class="btn btn-sm btn-primary mt-2">View Courses</a>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4 fade-in">
+                    <div class="service-card animate-hover">
+                        <i class="fas fa-users fa-3x mb-3"></i>
+                        <h3>Internships</h3>
+                        <p>Hands-on training and mentorship programs.</p>
+                        <a href="#internship" class="btn btn-sm btn-primary mt-2">Apply Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Online Courses</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="course-card animate-hover">
+                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80" alt="Web Development" class="img-fluid mb-3">
+                        <h4>Web Development</h4>
+                        <p>Learn modern web development with practical projects.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock"></i> 12 Weeks</li>
+                            <li><i class="fas fa-level-up-alt"></i> Beginner to Advanced</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="course-card animate-hover">
+                        <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=800&q=80" alt="Mobile Development" class="img-fluid mb-3">
+                        <h4>Mobile App Development</h4>
+                        <p>Master mobile app development for iOS and Android.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock"></i> 16 Weeks</li>
+                            <li><i class="fas fa-level-up-alt"></i> Intermediate</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="course-card animate-hover">
+                        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=800&q=80" alt="Data Science" class="img-fluid mb-3">
+                        <h4>Data Science</h4>
+                        <p>Learn data analysis, ML, and AI fundamentals.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-clock"></i> 20 Weeks</li>
+                            <li><i class="fas fa-level-up-alt"></i> Advanced</li>
+                        </ul>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Internship Section -->
+    <section id="internship" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Internship Program</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 fade-in">
+                    <h3>Launch Your Tech Career</h3>
+                    <p class="lead">Join our 3-month internship program and gain real-world experience in software development.</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-check-circle text-primary"></i> Hands-on project experience</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> Mentorship from senior developers</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> Potential for full-time employment</li>
+                        <li><i class="fas fa-check-circle text-primary"></i> Certificate upon completion</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary btn-lg mt-3">Apply for Internship</a>
+                </div>
+                <div class="col-lg-6 slide-in-right">
+                    <img src="https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?auto=format&fit=crop&w=800&q=80" alt="Internship Program" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 slide-in-left">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80" alt="About Us" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <h2>About Us</h2>
+                    <p class="lead">SmartSites Rwanda is a leading software development company based in Kigali, delivering cutting-edge solutions since 2020. We combine local expertise with global standards.</p>
+                    <div class="row mt-4">
+                        <div class="col-6">
+                            <h4><i class="fas fa-check-circle text-primary"></i> 50+</h4>
+                            <p>Projects Delivered</p>
+                        </div>
+                        <div class="col-6">
+                            <h4><i class="fas fa-users text-primary"></i> 30+</h4>
+                            <p>Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Our Portfolio</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 portfolio-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=800&q=80" alt="Project 1" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>AgriTech Management System</h4>
+                        <p>Enterprise Software</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=800&q=80" alt="Project 2" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Mobile Banking App</h4>
+                        <p>FinTech Solution</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 portfolio-item fade-in">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80" alt="Project 3" class="img-fluid">
+                    <div class="portfolio-overlay">
+                        <h4>Education Management Platform</h4>
+                        <p>Web Application</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Our Team</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1556157382-97eda2d62296?auto=format&fit=crop&w=400&q=80" alt="Team Member 1" class="img-fluid">
+                        </div>
+                        <h4>X</h4>
+                        <p>CEO & Founder</p>
+                        <div class="social-links">
+                            <a href="#" class="bounce-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bounce-hover"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" alt="Team Member 2" class="img-fluid">
+                        </div>
+                        <h4>Alice Uwase</h4>
+                        <p>Lead Developer</p>
+                        <div class="social-links">
+                            <a href="#" class="bounce-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bounce-hover"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=400&q=80" alt="Team Member 3" class="img-fluid">
+                        </div>
+                        <h4>Gahire Abdilillah</h4>
+                        <p>Software Developer</p>
+                        <div class="social-links">
+                            <a href="#" class="bounce-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80" alt="Team Member 4" class="img-fluid">
+                        </div>
+                        <h4>Sarah Mutesi</h4>
+                        <p>UI/UX Designer</p>
+                        <div class="social-links">
+                            <a href="#" class="bounce-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bounce-hover"><i class="fab fa-dribbble"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80" alt="Team Member 5" class="img-fluid">
+                        </div>
+                        <h4>Jean-Paul Mugisha</h4>
+                        <p>Backend Developer</p>
+                        <div class="social-links">
+                            <a href="#" class="bounce-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bounce-hover"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 fade-in">
+                    <div class="team-card">
+                        <div class="team-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?auto=format&fit=crop&w=400&q=80" alt="Team Member 6" class="img-fluid">
+                        </div>
+                        <h4>Claire Ineza</h4>
+                        <p>Project Manager</p>
+                        <div class="social-links">
+                            <a href="#" class="bounce-hover"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="bounce-hover"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h2 class="text-center mb-5 fade-in">Get in Touch</h2>
+            <div class="row g-4">
+                <div class="col-lg-6 mb-4 fade-in">
+                    <form action="https://formspree.io/f/xgegkrnv" method="POST" class="contact-form" id="contactForm">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <select name="purpose" class="form-control" required>
+                                <option value="">Select Purpose</option>
+                                <option value="hire">Hire Us</option>
+                                <option value="training">Join Training Program</option>
+                                <option value="internship">Apply for Internship</option>
+                                <option value="other">Other Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <!-- Hidden fields for additional email recipients -->
+                        <input type="hidden" name="_cc" value="gahiredev01@gmail.com,gahireabdilillah65@gmail.com">
+                        <input type="hidden" name="_subject" value="New Contact Form Submission - SmartSites Rwanda">
+                        <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+                        <button type="submit" class="btn btn-primary">
+                            <span class="button-text">Send Message</span>
+                            <div class="loading-spinner d-none">
+                                <i class="fas fa-spinner fa-spin"></i>
+                            </div>
+                        </button>
+                    </form>
+                    <!-- Success Message -->
+                    <div class="alert alert-success mt-3 d-none" id="successMessage">
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                    <!-- Error Message -->
+                    <div class="alert alert-danger mt-3 d-none" id="errorMessage">
+                        Oops! Something went wrong. Please try again later.
+                    </div>
+                </div>
+                <div class="col-lg-6 slide-in-right">
+                    <div class="contact-info">
+                        <h4>Contact Information</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Kigali Heights, KG 7 Ave, Kigali, Rwanda</p>
+                        <p><i class="fas fa-phone"></i> +250 788 123 456</p>
+                        <p><i class="fas fa-envelope"></i> info@smartsitesrwanda.com</p>
+                        <div class="mt-4">
+                            <h5>Office Hours:</h5>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Saturday: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center slide-in-bottom">
+                    <p class="animate-text">&copy; 2025 SmartSites Rwanda. All rights reserved.</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-12 text-center">
+                    <div class="social-links fade-in">
+                        <a href="#" class="mx-2 bounce-hover"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="mx-2 bounce-hover"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="mx-2 bounce-hover"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="mx-2 bounce-hover"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Animation Script -->
+    <script>
+        // Theme Toggle
+        const themeToggle = document.querySelector('.theme-toggle');
+        const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+        
+        // Check for saved theme preference or use system preference
+        const currentTheme = localStorage.getItem('theme') || 
+            (prefersDarkScheme.matches ? 'dark' : 'light');
+        
+        // Set initial theme
+        if (currentTheme === 'dark') {
+            document.documentElement.setAttribute('data-theme', 'dark');
+        }
+        
+        // Theme toggle click handler
+        themeToggle.addEventListener('click', () => {
+            let theme = document.documentElement.getAttribute('data-theme');
+            let newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        // Scroll To Top Button
+        const scrollToTopBtn = document.querySelector('.scroll-to-top');
+        
+        window.addEventListener('scroll', () => {
+            // Show/hide scroll to top button
+            if (window.pageYOffset > 300) {
+                scrollToTopBtn.classList.add('visible');
+            } else {
+                scrollToTopBtn.classList.remove('visible');
+            }
+            
+            // Update progress bar
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.querySelector('.scroll-progress').style.width = scrolled + '%';
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Fade In Animation on Scroll
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Navbar Background on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Active Navigation Link
+        const sections = document.querySelectorAll('section[id]');
+        window.addEventListener('scroll', () => {
+            const scrollY = window.pageYOffset;
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document.querySelector(`.nav-link[href*=${sectionId}]`).classList.add('active');
+                } else {
+                    document.querySelector(`.nav-link[href*=${sectionId}]`).classList.remove('active');
+                }
+            });
+        });
+
+        // Service Card Stagger Animation
+        document.querySelectorAll('.service-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Team Card Stagger Animation
+        document.querySelectorAll('.team-card').forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+        });
+
+        // Form handling
+        const contactForm = document.getElementById('contactForm');
+        const successMessage = document.getElementById('successMessage');
+        const errorMessage = document.getElementById('errorMessage');
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        const buttonText = submitButton.querySelector('.button-text');
+        const loadingSpinner = submitButton.querySelector('.loading-spinner');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Show loading state
+            buttonText.style.opacity = '0';
+            loadingSpinner.classList.remove('d-none');
+            submitButton.disabled = true;
+
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: 'POST',
+                    body: new FormData(contactForm),
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    // Show success message
+                    contactForm.reset();
+                    successMessage.classList.remove('d-none');
+                    errorMessage.classList.add('d-none');
+                    
+                    // Hide success message after 5 seconds
+                    setTimeout(() => {
+                        successMessage.classList.add('d-none');
+                    }, 5000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            } catch (error) {
+                // Show error message
+                errorMessage.classList.remove('d-none');
+                successMessage.classList.add('d-none');
+            } finally {
+                // Reset button state
+                buttonText.style.opacity = '1';
+                loadingSpinner.classList.add('d-none');
+                submitButton.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html> 
