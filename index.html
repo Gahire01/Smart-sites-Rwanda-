@@ -557,11 +557,12 @@
     
     <!-- Animation Script -->
     <script>
-        // Loading Screen
-        document.addEventListener('DOMContentLoaded', () => {
+        // Loading Screen - Show on every refresh
+        window.onload = () => {
             const loadingScreen = document.querySelector('.loading-screen');
             
-            // Prevent scrolling while loading
+            // Show loading screen
+            loadingScreen.style.display = 'flex';
             document.body.style.overflow = 'hidden';
             
             // Hide loading screen after 5 seconds
@@ -571,10 +572,11 @@
                 
                 // Remove loading screen from DOM after fade out
                 setTimeout(() => {
-                    loadingScreen.remove();
+                    loadingScreen.style.display = 'none';
+                    loadingScreen.classList.remove('fade-out'); // Reset for next refresh
                 }, 500);
             }, 5000);
-        });
+        };
 
         // Theme Toggle
         const themeToggle = document.querySelector('.theme-toggle');
