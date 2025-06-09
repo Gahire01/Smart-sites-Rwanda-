@@ -498,6 +498,18 @@
                             <input type="email" class="form-control" id="email" name="email" required>
                         </div>
                         <div class="mb-3">
+                            <label for="purpose" class="form-label">Purpose of Contact</label>
+                            <select class="form-control" id="purpose" name="purpose" required>
+                                <option value="">Select a purpose...</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="project">Project Discussion</option>
+                                <option value="internship">Internship Application</option>
+                                <option value="course">Course Enrollment</option>
+                                <option value="partnership">Business Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
                             <label for="message" class="form-label">Message</label>
                             <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
                         </div>
