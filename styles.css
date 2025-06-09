@@ -79,12 +79,17 @@ h4, .h4 { font-size: calc(1.175rem + 0.3vw); }
     padding: 0;
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 }
 
 .navbar-logo {
-    height: 35px;
+    height: 40px;
     width: auto;
-    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover .navbar-logo {
+    transform: scale(1.05);
 }
 
 .navbar-toggler {

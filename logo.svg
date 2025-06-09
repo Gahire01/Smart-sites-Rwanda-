@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="50" viewBox="0 0 200 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background Elements -->
+    <rect x="5" y="10" width="40" height="30" rx="4" fill="#00704a"/>
+    <path d="M10 25 L20 15 L30 25 L40 15" stroke="white" stroke-width="2"/>
+    
+    <!-- Text -->
+    <text x="55" y="32" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#333333">
+        Rwanda<tspan fill="#00704a">Devs</tspan>
+    </text>
+    <text x="55" y="45" font-family="Arial, sans-serif" font-size="12" fill="#666666">
+        INNOVATE • BUILD • GROW
+    </text>
+</svg> 

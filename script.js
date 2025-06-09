@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 const formData = new FormData(contactForm);
-                const response = await fetch(contactForm.action, {
+                const response = await fetch('https://usebasin.com/f/e6df09a3000e', {
                     method: 'POST',
                     body: formData,
                     headers: {
@@ -91,30 +91,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     contactForm.reset();
                     successMessage.classList.remove('d-none');
                     successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                    
-                    // Reset button state after 5 seconds
-                    setTimeout(() => {
-                        buttonText.style.opacity = '1';
-                        loadingSpinner.classList.add('d-none');
-                        submitButton.disabled = false;
-                    }, 5000);
-
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        successMessage.classList.add('d-none');
-                    }, 5000);
                 } else {
-                    // Handle error response
-                    const data = await response.json();
-                    throw new Error(data.error || 'Form submission failed');
+                    throw new Error('Form submission failed');
                 }
             } catch (error) {
                 console.error('Form submission error:', error);
-                // Show error message
-                errorMessage.textContent = 'Sorry, there was a problem sending your message. Please try again later.';
                 errorMessage.classList.remove('d-none');
                 errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-                
+            } finally {
                 // Reset button state
                 buttonText.style.opacity = '1';
                 loadingSpinner.classList.add('d-none');
@@ -152,4 +136,21 @@ document.addEventListener('DOMContentLoaded', () => {
     tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
     });
+
+    // Anti-copying measures
+    document.addEventListener('contextmenu', function(e) {
+        e.preventDefault();
+        alert('Right-click is disabled to protect content. Please contact us for any inquiries.');
+    });
+
+    document.addEventListener('keydown', function(e) {
+        if (e.ctrlKey && (e.keyCode === 67 || e.keyCode === 86 || e.keyCode === 85 || e.keyCode === 117)) {
+            e.preventDefault();
+            alert('This action is disabled to protect our content.');
+        }
+    });
+
+    // Warning message in console
+    console.log('%cStop!', 'color: red; font-size: 40px; font-weight: bold;');
+    console.log('%cThis code is protected by copyright law. Unauthorized use or copying is prohibited.', 'font-size: 20px;');
 }); 
